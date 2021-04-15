@@ -6,6 +6,9 @@
   --ColorTextDiversity: #ffffff;
   --FontSize-Mobile: 30px;
 }
+* {
+  box-sizing: border-box;
+}
 .header-container {
   padding: 10px 0 20px 0;
   display: flex;
@@ -25,7 +28,7 @@
 }
 .link {
   float: left;
-  margin: 20px;
+  margin-left: 20px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -58,4 +61,21 @@
   justify-content: center;
   align-items: center;
   white-space: pre-line;
+}
+@media (min-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+  }
+  .menu {
+    padding-top: 0;
+  }
+  .link {
+    margin-left: 20px;
+  }
+  .main-container {
+    font-size: 40px;
+    line-height: 1.2;
+  }
 }
