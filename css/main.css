@@ -23,14 +23,17 @@
   width: 155px;
 }
 .menu {
-  padding: 10px 0 0px 0;
+  padding: 10px 0 0 0;
   display: inline;
+  text-align: center;
 }
 .link {
   float: left;
-  margin-left: 20px;
   text-transform: uppercase;
   text-decoration: none;
+}
+.contact {
+  margin-left: 20px;
 }
 .link-color:link {
   color: var(--Textmenu);
