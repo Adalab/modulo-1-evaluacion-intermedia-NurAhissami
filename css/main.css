@@ -62,9 +62,19 @@
   font-size: var(--FontSize-Mobile);
   line-height: 36px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  white-space: pre-line;
+  text-transform: capitalize;
+}
+.title {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.title-item {
+  text-align: center;
 }
 @media (min-width: 768px) {
   .header-container {
