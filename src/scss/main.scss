@@ -1,0 +1,95 @@
+:root {
+  font-family: "Rubik", sans-serif;
+  font-size: 16px;
+  --Textmenu: #4a4a4a;
+  --Colorbackground: #3cdbc0;
+  --ColorTextDiversity: #ffffff;
+  --FontSize-Mobile: 30px;
+}
+* {
+  box-sizing: border-box;
+}
+.header-container {
+  padding: 10px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  background-color: white;
+}
+.logo {
+  width: 155px;
+}
+.menu {
+  padding: 10px 20px;
+  display: inline;
+  text-align: center;
+}
+.link {
+  float: left;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.contact {
+  margin-left: 20px;
+}
+.link-color:link {
+  color: var(--Textmenu);
+  text-decoration: none;
+}
+.link-color:visited {
+  color: var(--Textmenu);
+  text-decoration: none;
+}
+.link-color:hover {
+  color: var(--Colorbackground);
+  text-decoration: none;
+}
+.link-color:active {
+  color: var(--Textmenu);
+  text-decoration: none;
+}
+.main-container {
+  height: 100vh;
+  background-color: var(--Colorbackground);
+  padding-top: 60px;
+  color: var(--ColorTextDiversity);
+  font-weight: bold;
+  text-align: center;
+  font-size: var(--FontSize-Mobile);
+  line-height: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+.title {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.title-item {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .header-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 30px;
+  }
+  .menu {
+    padding-top: 0;
+  }
+  .link {
+    margin-left: 20px;
+  }
+  .main-container {
+    font-size: 40px;
+    line-height: 1.2;
+  }
+}
