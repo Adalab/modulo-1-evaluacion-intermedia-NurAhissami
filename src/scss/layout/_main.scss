@@ -1,0 +1,26 @@
+.main {
+  height: 100vh;
+  background-color: var(--Colorbackground);
+  padding-top: 60px;
+  color: var(--ColorTextDiversity);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    text-align: center;
+    font-weight: bold;
+    font-size: var(--FontSize-Mobile);
+    line-height: 36px;
+    text-transform: capitalize;
+  }
+  @media (min-width: 768px) {
+    &__item {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+  }
+}
